@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <title>Change</title>
+</head>
+<body>
+   <div id="box">
+    <h2>Taux de change</h2>
+    <table>
+        <tr>
+            <td><input id="fromAmount" type="text" size="15" onkeyup="recupValeur()"/></td>
+            <td>
+                <select id="from" onchange="recupValeur()">
+                  <option value="EUR">Europe (EUR)</option>
+                  <option value="USD">Dollars US (USD)</option>
+                  <option value="JPY">Japanese Yen (JPY)</option>
+                  <option value="AUD">Dollars AUS (AUD)</option>
+                  <option value="LAK">Laotian Kip(LAK)</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+           <td><input id="toAmount" type="text" size="15" disabled/></td>
+            <td>
+                <select id="to" onchange="recupValeur()">
+                  <option value="GBP">Livres(GBP)</option>
+                  <option value="JPY">Japanese Yen (JPY)</option>
+                  <option value="USD">Dollars US (USD)</option>
+                  <option value="AUD">Dollars AUS (AUD)</option>
+                  <option value="EUR">Europe (EUR)</option>
+                  <option value="LAK">Laotian Kip(LAK)</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
