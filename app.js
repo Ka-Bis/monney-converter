@@ -1,6 +1,6 @@
 'use strict'
 
-let url = 'http://data.fixer.io/api/latest? access_key=078b06aac10b510c81e5743bba8855d3&base=EUR&symbols=GBP,USD,EUR,JPY,AUD,LAK'
+let url = 'https://data.fixer.io/api/latest? access_key=078b06aac10b510c81e5743bba8855d3&base=EUR&symbols=GBP,USD,EUR,JPY,AUD,LAK'
 
 function recupValeur() {
     $.ajax( // Fonction ajax jquery
